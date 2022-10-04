@@ -1,0 +1,83 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variable */
+:root{
+    --navbar-height : 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+#navbar ::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+}
+/* logo,image,styling of navbar */
+#logo{
+    margin: 1px 1px;
+}
+#logo img{
+    height: 40px;
+    width: 40px;
+    margin: 3px 6px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai',cursive;
+}
+#navbar ul li{
+    /* color: white; */
+    /* ul k bullets hatane k liye list-style :*/
+    list-style: none; 
+    font-size: 1.4rem;
+}
+#navbar ul li a{
+    color: whitesmoke;
+    display: block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('images/Main_bg.jpg') no-repeat center center/cover;
+    height: 100%;
+    top : 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+/* utility class */
+.h_primary{
+    font-size: 2.8rem ;
+    padding: 12px;
+}
