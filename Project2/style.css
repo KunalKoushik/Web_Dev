@@ -1,83 +1,224 @@
 /* css reset */
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* css variable */
-:root{
-    --navbar-height : 59px;
+:root {
+    --navbar-height: 59px;
 }
-#navbar{
+
+#navbar {
     display: flex;
     align-items: center;
-    position: relative;
-    
+    position: absolute;
+    top: 0;
 }
-#navbar ::before{
+
+#navbar ::before {
     content: "";
     background-color: black;
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.7;
+    opacity: 0.08;
     top: 0;
     left: 0;
 }
+
 /* logo,image,styling of navbar */
-#logo{
+#logo {
     margin: 1px 1px;
 }
-#logo img{
+
+#logo img {
     height: 40px;
     width: 40px;
     margin: 3px 6px;
 }
 
-#navbar ul{
+#navbar ul {
     display: flex;
-    font-family: 'Baloo Bhai',cursive;
+    font-family: 'Baloo Bhai 2', cursive;
 }
-#navbar ul li{
+
+#navbar ul li {
     /* color: white; */
     /* ul k bullets hatane k liye list-style :*/
-    list-style: none; 
+    list-style: none;
     font-size: 1.4rem;
 }
-#navbar ul li a{
+
+#navbar ul li a {
     color: whitesmoke;
     display: block;
     padding: 2px 10px;
     border-radius: 20px;
     text-decoration: none;
 }
-#navbar ul li a:hover{
+
+#navbar ul li a:hover {
     color: black;
     background-color: white;
 }
 
 /* home section */
-#home{
+#home {
     display: flex;
     flex-direction: column;
-    padding: 3px 200px;
-    height: 500px;
+    padding: 2px 200px;
+    height: 700px;
     justify-content: center;
     align-items: center;
 }
-#home::before{
+
+#home::before {
     content: "";
     position: absolute;
     background: url('images/Main_bg.jpg') no-repeat center center/cover;
     height: 100%;
-    top : 0px;
+    top: 0px;
     left: 0px;
     width: 100%;
     z-index: -1;
-    opacity: 0.89;
+    opacity: 0.7;
 }
+
+#home h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree serif', 'serif';
+
+}
+
 /* utility class */
-.h_primary{
-    font-size: 2.8rem ;
+.h_primary {
+    font-size: 2.8rem;
+    padding: 20px;
+    font-family: 'Bree serif', 'serif';
+
+}
+
+.h_secondary {
+    font-size: 2.1rem;
     padding: 12px;
+    font-family: 'Bree serif', 'serif';
+}
+
+#services {
+    display: flex;
+    margin: 15px;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 24px;
+    background-color: rgb(255, 243, 220);
+}
+
+#services .box img {
+    display: block;
+    height: 160px;
+    margin: auto;
+}
+
+#services .box p {
+    font-size: 1.5rem;
+    font-family: 'Bree serif', 'serif';
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid whitesmoke;
+    background-color: green;
+    color: whitesmoke;
+    margin: 17px 15px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.client-section::before {
+    content: "";
+    position: absolute;
+    background: url("images/food.jpg");
+    width: 100%;
+    height: 48%;
+    z-index: -1;
+    opacity: 0.4;
+    left: 0;
+}
+
+.client-section {
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.client img {
+    height: 120px;
+    margin: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #contact-section {
+    position: relative;
+} */
+
+#contact-section::before {
+    content: "";
+    position: absolute;
+    background: url('images/contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    left: 0;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    padding: 2px 55px;
+    height: 100%; 
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid black;
+}
+.form{
+    border: 2px solid rgb(0, 8, 255);
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 10px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 6px 10px;
+}
+.center {
+    text-align: center;
 }
