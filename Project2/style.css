@@ -30,12 +30,12 @@
 
 /* logo,image,styling of navbar */
 #logo {
-    margin: 1px 1px;
+    margin: 2px 1px;
 }
 
 #logo img {
     height: 40px;
-    width: 40px;
+    width: 37px;
     margin: 3px 6px;
 }
 
@@ -78,7 +78,7 @@
     content: "";
     position: absolute;
     background: url('images/Main_bg.jpg') no-repeat center center/cover;
-    height: 100%;
+    height: 110%;
     top: 0px;
     left: 0px;
     width: 100%;
