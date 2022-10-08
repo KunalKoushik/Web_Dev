@@ -47,6 +47,9 @@
     padding: 4px 0px;
     font-family: 'Bree serif', 'serif';
 } */
+html{
+    scroll-behavior: smooth;
+}
 
 /* Navigation */
 #navbar {
