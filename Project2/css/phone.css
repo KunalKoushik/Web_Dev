@@ -15,15 +15,7 @@
     padding: 10px 20px;
 }
 
-@media (max-width:900px) {
-    #home::before {
-        content: "";
-        position: absolute;
-        background: url('Main_bg.jpg') no-repeat center center/cover;
-        width: 35rem;
-        height: 20rem;
-    }
-}
+
 
 
 #home h1 {
@@ -54,6 +46,7 @@ html{
 /* Navigation */
 #navbar {
     flex-direction: column;
+    position: sticky;
 }
 
 #navbar ul li a{
@@ -90,8 +83,17 @@ html{
 /* Clients section */
 #clients{
     flex-wrap: wrap;
+    position: inherit;
 }
 
+
+@media (min-width:438px) and (max-width:700px) {
+    .client-section {
+        background-color:rgb(71, 87, 95);
+        align-items: center;
+        justify-content: center;
+    }
+}
 .clients img{
     width: 66px;
     padding: 5px;
@@ -99,8 +101,40 @@ html{
 }
 
 /* Contact us section */
+#contact-section {
+    /* display: flex;
+    flex-direction: column; */
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width:200px) and (max-width:450px) {
+    
+    #contact {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 35px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border: 2px solid black;
+    }
+}
 #contact form{
+    height: 100%;
     width:80%;
+    margin: 10px;
+}
+#contact label{
+    font-size: 1rem;
+    font-family: 'Bree serif', 'serif';
+}
+#contact textarea{
+    width : 100%;
+    padding: 0.7rem;
+    border-radius: 9px;
+    font-size: 1.8rem;
 }
 /* Footer */
 

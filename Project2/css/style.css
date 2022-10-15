@@ -160,7 +160,7 @@ html{
     cursor: pointer;
 }
 
-.client-section::before {
+/* .client-section::before {
     content: "";
     position: absolute;
     background: url("../images/food.jpg");
@@ -169,10 +169,11 @@ html{
     z-index: -1;
     opacity: 0.4;
     left: 0;
-}
+} */
+
 
 .client-section {
-    margin: 30px;
+    background-color:rgb(60, 64, 66);
     align-items: center;
     justify-content: center;
 }
@@ -233,7 +234,7 @@ html{
     padding: 10px; */
 }
 #contact form{
-    width: 40%;
+    width: 60%;
     /* align-items: center;
     justify-content: center;*/
     margin: 50px;
