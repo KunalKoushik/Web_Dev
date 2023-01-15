@@ -1,0 +1,38 @@
+.back{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom,orange,white,green);
+
+}
+.box{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    background-image: radial-gradient(orange,white,green);
+
+}
+#box2{
+    position: relative;
+    right: 77px;
+    top: 429px;
+}
+#box3{
+    position: relative;
+    left:277px;
+    top: 429px;
+}
+#box4{
+    position: relative;
+    left:201px;
+    
+}
+#box5{
+    position: relative;
+    top: 225px;
+    right: 90px;
+    background-image: url("Ashokafinal.jpg");
+    border-radius: 70px;
+   
+}
